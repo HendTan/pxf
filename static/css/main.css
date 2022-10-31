@@ -1,0 +1,531 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+#navContainer{
+    height: 5vh;
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+}
+
+#navContainer, #navCollapse{
+    background-color: #001a33;
+}
+
+img#navLogo{
+    width: 4rem;
+    height: 3rem;
+}
+
+#navLinkContainer{
+    margin-right: 2rem;
+}
+
+#navMenu, #navCross{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+}
+
+#navLinks{
+    display: flex;
+    margin: 0%;
+    margin-bottom: .5rem;
+    padding: 0;
+}
+
+#navLinks li{
+    margin-right: 1rem;
+    list-style-type: none;
+}
+
+#navLinks li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:#DFF1FF;
+    font-weight: 600;
+}
+
+#navCollapse{
+    width: 100%;
+    height: auto;
+    display: none;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    padding-top: 2rem;
+}
+
+#navCross{
+    float: right;
+    margin-right: 1rem;
+}
+
+
+#navCollapse #navLinks{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: end;
+    align-items: center;
+    margin-left:5rem;
+}
+
+#navCollapse #navLinks li{
+    margin-bottom: 2rem;
+}
+
+#homeContainer{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #DFF1FF;
+    padding-top: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+}
+
+#homeTitleContainer{
+    width: 40%;
+    margin-left: 3rem;
+    padding: 3rem;
+}
+
+#homeTitleContainer h1{
+    color:#001a33;
+}
+
+#homtTitleBtns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeTitleBtn{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    
+}
+
+.homeTitleBtn img{
+    width: 30px;
+    height: 30px;
+}
+
+#homeTitleContainer p{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+#homeTitleContainer p strong{
+    color: #001a33;
+}
+
+#homtTitleBtns{
+    margin-top: 5rem;
+    width: 100%;
+}
+
+#WhatsappBtn, #EmailBtn:hover{
+    background-color: #001a33;
+}
+
+#EmailBtn a, #WhatsappBtn a{
+    margin-left: 10px;
+}
+
+#WhatsappBtn a{
+    text-decoration: none;
+    color: #DFF1FF;
+}
+
+#WhatsappBtn:hover{
+    transition: .1s linear;
+    border: 2px  solid #001a33;
+    background-color: transparent
+}
+
+#EmailBtn a{
+    text-decoration: none;
+    color:#001a33;
+}
+
+#EmailBtn{
+    border: 2px solid #001a33;
+}
+
+#homeContainer img#boatImg{
+    width: 50%;
+    max-width: 860px;
+    max-height: 786px;
+    height: 140%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#missionContainer{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+}
+
+#missionContainer h1, #productContainer h1{
+    color: #001a33;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#missionContainer p{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #001a33;
+}
+
+#missionMainContent{
+    padding: 3rem 0;
+}
+
+.cardContainer{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cardContainer .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardContainer .card img, #products .card img{
+    width: 30%;
+}
+
+.cardContainer .card h5, #products .card h5{
+    font-size: 1.5rem;
+}
+
+
+#productContainer{
+    padding: 2rem;
+    background-color: #DFF1FF;
+}
+
+#productContainer .cardContainer, #productsContainer{
+    margin-top: 5rem;
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#products .card{
+    text-align: center;
+    width: 25%;
+}
+
+#businessLocation{
+    width: 100%;
+    height: 100%;
+    color:#001a33;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+#businessLocation h1{
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+#flexImages{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+    margin: 0 auto;
+    
+
+}
+
+#flexImages img{
+    width: 50%;
+    height: 500px;
+    margin-right: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#flexImages::-webkit-scrollbar{
+    height: .5rem;
+}
+
+#flexImages::-webkit-scrollbar-thumb{
+    background-color: #001a33;
+    border-radius: 5px;
+}
+
+#businessMapContainer{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+#map{
+    width: 50%;
+    height: 100%;
+}
+
+#map iframe{
+    width: 100%;
+}
+
+#socialMedia{
+    width: 30%;
+}
+
+#socialMedia iframe{
+    margin: 0 auto;
+    margin-left: 3.5rem;
+}
+
+#socialMediaIcons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7rem;
+}
+
+#socialMediaIcons img{
+    width: 48px;
+}
+#facebook{
+    display: none;
+}
+
+#footer{
+    height: auto;
+    width: 100%;
+    background-color: #001a33;
+    color: #DFF1FF;
+    padding: .2rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+@media only screen and (max-width: 1850px){
+    #homeContainer{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        background-image : url("../img/boat.jpg");
+        background-repeat : no-repeat;
+        background-attachment : fixed;
+        background-size : cover;
+        background-position : bottom;
+    }
+    #homeTitleContainer{
+        /* height: 100%;
+        width: 70%;
+        margin:0;
+        backdrop-filter: blur(5px);
+        background-image: linear-gradient(transparent, #001a33); */
+        height: 100%;
+        width: 100%;
+        margin:0;
+        background-image: linear-gradient(180deg, transparent 0%, rgba(0,26,51,1) 90%);
+    }
+    #homeTitleContainer #text{
+        width: 70%;
+        margin: auto;
+    }
+    #homeTitleContainer h1, #homeTitleContainer p{
+        color:white
+    }
+    #homeTitleContainer p strong{
+        color: #DFF1FF
+    }
+    #boatImg{
+        display: none;
+    }
+
+    #WhatsappBtn{
+        background-color: #DFF1FF;
+        
+    }
+    #WhatsappBtn a{
+        color: #001a33;
+    }
+    #EmailBtn{
+        border: 2px solid #DFF1FF;
+    }
+    #EmailBtn a{
+        color: #DFF1FF;
+    }
+
+    #missionContainer{
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1550px){
+    #businessMapContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #map{
+        margin: 0;
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+
+    #socialMedia{
+        width: 100%;
+        margin-top: -3rem;
+    }
+
+    #socialMedia iframe{
+        display: none;
+    }
+    #facebook{
+        display: block;
+    }
+    
+    #socialMediaIcons{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 955px){
+    #missionMainContent{
+        display: flex;
+        padding: 2rem;
+    }
+    #missionMainContent .cardContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .cardContainer .card{
+        width: 50%;
+    }
+    .cardContainer .card img{
+        width: 50%;
+    }
+    .cardContainer .card h5{
+        font-size: 1.2rem;
+    }
+    #missionContainer p{
+        text-align: left;
+    }
+
+    #businessLocation h1{
+        font-size: 2rem;
+    }
+
+    #flexImages img{
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #missionMainContent .cardContainer{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .cardContainer .card{
+        width: 90%;
+    }
+    #missionMainContent p{
+        font-size: 1.2rem;
+    }
+    #missionContainer h1 , #productContainer h1{
+        font-size: 2rem;
+    }
+    #productsContainer{
+        width: 100%;
+        overflow-x: scroll;
+        
+    }
+    #productsContainer #products{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        flex-wrap: nowrap;
+    }
+
+
+    #productsContainer::-webkit-scrollbar-thumb{
+        background-color: #001a33;
+        border-radius: 5px;
+    }
+    #products .card{
+        width: 45%;
+        margin-right: 5rem;
+        flex: 0 0 auto
+    }
+
+    #products .card img{
+        width: 100%;
+    }
+    #flexImages img{
+        width: 80%;
+    }
+    #map iframe{
+        height: 200px;
+    }
+    #footer{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #homeContainer{
+        margin-top: 1rem;
+    }
+    #homeTitleContainer{
+        padding: 1rem;
+    }
+    #homeTitleContainer p{
+        font-size: 1.2rem;
+    }
+
+    #homeTitleContainer p,#homtTitleBtns{
+        margin-top: 2rem;
+    }
+    #missionContainer{
+        padding-bottom:3rem;
+    }
+
+    #missionMainContent{
+        flex-direction: column;
+    }
+    #productContainer .cardContainer{
+        flex-direction: column;
+    }
+}
