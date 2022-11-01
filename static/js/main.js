@@ -4,9 +4,13 @@ $(function(){
     
     window.onresize = window.onload = function(){
         let windowWidth = window.innerWidth;
-        if(windowWidth <= 500){
+        if(windowWidth <= 690){
             $("#navLinkContainer #navLinks").hide();
             $("#navMenu").show();
+        }else{
+            $("#navMenu").hide();
+            $("#navCollapse").hide();
+            $("#navLinkContainer #navLinks").show();
         }
         if(windowWidth <= 650){
             $("#WhatsappBtn").empty();
@@ -74,11 +78,6 @@ $(function(){
         if(windowWidth <= 1850){
             $("#WhatsappBtn img").prop("src", "./static/img/WhatsappBlack.png");
             $("#EmailBtn img").prop("src", "./static/img/Mail.png");
-        }
-        if(windowWidth > 1850){
-            $("#navMenu").hide();
-            $("#navCollapse").hide();
-            $("#navLinkContainer #navLinks").show();
         }
     }
 
